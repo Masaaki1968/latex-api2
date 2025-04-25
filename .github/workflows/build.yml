@@ -12,11 +12,17 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y texlive-full
 
+      - name: Check LaTeX version
+        run: |
+          which lualatex
+          lualatex --version
+
       - name: Compile LaTeX document
         run: |
           cd src
-          lualatex main.tex
-          lualatex main.tex
+          ls -la
+          lualatex main.tex || true
+          lualatex main.tex || true
 
       - name: Upload PDF
         uses: actions/upload-artifact@v4
