@@ -4,17 +4,17 @@
 \usepackage{CJKutf8}
 \usepackage{float}
 
-\title{日本語タイトル}
-\author{著者名}
+\title{テスト用PDF}
+\author{テストユーザー}
 \date{\today}
 
 \begin{document}
 \maketitle
 
-\section{はじめに}
-これは日本語LaTeXドキュメントのサンプルです。
+\section{テスト開始}
+これはテスト用の日本語LaTeX文書です。
 
 \section{本文}
-日本語の文章を自由に書くことができます。
+GitHub ActionsでPDF化できるかチェックします！
 
 \end{document}
